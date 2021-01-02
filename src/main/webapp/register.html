@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		body{
+			text-align:center;
+		}
+	</style>
+</head>
+
+<body>
+
+<div class="container">
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span12">
+				<h1>手机销售系统</h1>
+				<hr>
+				<h3>
+					注册账户
+				</h3>
+				<p>请输入用户名，密码，邮箱，以用于注册账号</p>
+				<br>
+				<br>
+
+				<form class="form-horizontal" action="/MobileSalesSystem/UserRegisterServlet" method="get">
+					<div class="control-group">
+						<label class="control-label" for="inputEmail">用户名</label>
+						<div class="controls">
+							<input id="inputName" type="text" name="username"/>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="inputPassword">密码</label>
+						<div class="controls">
+							<input id="inputPassword" type="password" name="password"/>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="inputEmail">收货地址</label>
+						<div class="controls">
+							<input id="inputEmail" type="text" name="address"/>
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<label class="checkbox"></label>
+							<button type="submit" class="btn">注册</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
